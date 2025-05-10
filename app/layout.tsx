@@ -39,8 +39,14 @@ export default function RootLayout({
   const [activeSection, setActiveSection] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDarkMode, setISDarkMode] = useState(false);
+
+  // inicilaizar el boton idioma
+  const [language, setLanguage] = useState(() => {
+    return localStorage.getItem("language") || "es";
+  });
+
   
-  // Efecto para manejar el tema y el scroll
+  // Efecto para manejar el tema y el scroll y el idioma
   useEffect(() => {
     // Inicilaizar el tema
   const storedTheme = localStorage.getItem("theme");
@@ -49,6 +55,8 @@ export default function RootLayout({
       document.documentElement.classList.add("dark");
     }
 
+    i18n.changeLanguage(language); //Aplica el idioma seleccionado
+    localStorage.setItem("language", language); // Guarda la seleccion
     // Manejador de Scroll
     const handleScroll = () => {
     // Calcular el progreso de desplazamiento
@@ -69,7 +77,7 @@ export default function RootLayout({
 
   window.addEventListener("scroll",handleScroll);
   return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [language]);
 
   const toggleTheme = () => {
     setISDarkMode(!isDarkMode);
@@ -162,30 +170,50 @@ export default function RootLayout({
               </button>
               {/*idioma */}
 
-             <div className="flex items-center">
-  {/* Botón para cambiar a Inglés */}
+             {/* <div className="flex items-center">
+  {/* Botón para cambiar a Inglés }
   {i18n.language !== "en" && (
     <button
       onClick={() => changeLanguage("en")}
       className="flex items-center space-x-2 bg-secondary text-white py-2 px-4 rounded-lg hover:bg-accent transition"
     >
-      <Flag code="US" className="w-6 h-6" /> {/* Bandera de Estados Unidos */}
+      <Flag code="US" className="w-6 h-6" /> {/* Bandera de Estados Unidos }
 
     </button>
   )}
 
-  {/* Botón para cambiar a Español */}
+  {/* Botón para cambiar a Español }
   {i18n.language !== "es" && (
     <button
       onClick={() => changeLanguage("es")}
       className="flex items-center space-x-2 bg-secondary text-white py-2 px-4 rounded-lg hover:bg-accent transition"
     >
-      <Flag code="ES" className="w-6 h-6" /> {/* Bandera de España */}
+      <Flag code="ES" className="w-6 h-6" /> {/* Bandera de España }
 
     </button>
   )}
-</div>
+</div> */}
+<div className="flex items-center">
+  {/* Botón para cambiar a Inglés */}
+  {language !== "en" && (
+    <button
+      onClick={() => setLanguage("en")}
+      className="flex items-center space-x-2 bg-secondary text-white py-2 px-4 rounded-lg hover:bg-accent transition"
+    >
+      <Flag code="US" className="w-6 h-6" />
+    </button>
+  )}
 
+  {/* Botón para cambiar a Español */}
+  {language !== "es" && (
+    <button
+      onClick={() => setLanguage("es")}
+      className="flex items-center space-x-2 bg-secondary text-white py-2 px-4 rounded-lg hover:bg-accent transition"
+    >
+      <Flag code="ES" className="w-6 h-6" />
+    </button>
+  )}
+</div>
 
 
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

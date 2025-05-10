@@ -24,7 +24,7 @@ export default function About() {
             David Y. Villa Durán
           </h1>
           <h2 className="text-lg text-gray-800 font-light dark:text-gray-300">
-            Ingeniero Electrónico & Desarrollador Full Stack
+            Ingeniero en Electrónica & Desarrollador Full Stack
           </h2>
           <Link
             href="./cv/cv082024Español.pdf"
@@ -45,10 +45,10 @@ export default function About() {
           Desde temprana edad, descubrí mi pasión por la tecnología y la innovación. Mi formación como Ingeniero Electrónico me ha permitido desarrollar una sólida base en diseño de circuitos, sistemas embebidos y control automatizado, combinando hardware y software para crear soluciones tecnológicas impactantes.
         </p>
         <p className="mb-4">
-          Durante mi trayectoria profesional, he trabajado en la implementación de sistemas avanzados de monitoreo y automatización, diseñando dispositivos electrónicos que optimizan procesos industriales y aumentan la eficiencia operativa. Mi capacidad para integrar sensores, microcontroladores y tecnologías IoT (Internet of Things) ha sido clave para llevar a cabo proyectos innovadores en diversas industrias.
+          Durante mi trayectoria profesional, he trabajado en la implementación de sistemas avanzados de monitoreo y automatización, diseñando dispositivos electrónicos que optimizan procesos industriales y aumentan la eficiencia operativa. En la industria de la Mineria, deseñando e implementando sistemas HMI (Interfaz Hombre Maquina), calibracion de sensores, de flujo, nivel, etc. Mi capacidad para integrar sensores, microcontroladores y tecnologías IoT (Internet of Things) ha sido clave para llevar a cabo proyectos innovadores en diversas industrias.
         </p>
         <p className="mb-4">
-          Al evolucionar en mi carrera, he complementado mi experiencia en electrónica con el desarrollo de software, especializándome en aplicaciones web modernas y escalables. Como desarrollador full stack, domino herramientas como React, Next.js y Tailwind CSS para crear plataformas funcionales, responsivas y accesibles, siempre priorizando la experiencia del usuario.
+          Al evolucionar en mi carrera, he complementado mi experiencia en electrónica con el desarrollo de software, especializándome en aplicaciones web modernas y escalables. Como desarrollador full stack, domino herramientas como React, Next.js, Php, Phyton, Laravel  y Tailwind CSS para crear plataformas funcionales, responsivas y accesibles, siempre priorizando la experiencia del usuario.
         </p>
         <p className="mb-4">
           Entre mis logros, destaco la creación de sistemas automatizados de control energético y la implementación de plataformas digitales que conectan dispositivos electrónicos con interfaces visuales intuitivas. Este enfoque holístico, que combina hardware y software, permite ofrecer soluciones robustas y completas que superan las expectativas.
@@ -65,35 +65,60 @@ export default function About() {
         <h2 className="text-2xl font-bold text-white dark:text-yellow-300 mb-8 text-center">
           Mi Trayectoria Profesional
         </h2>
-        <div className="relative border-l-4 border-gray-400 dark:border-yellow-300 ml-8">
+        <div className="relative border-l-4 border-gray-400 dark:border-yellow-300 ml-npm8">
           {/* Hito 1 */}
           <div className="mb-12 ml-6 relative">
             <div className="absolute -left-7 top-0 w-14 h-14 bg-primary text-white dark:bg-yellow-300 rounded-full flex items-center justify-center shadow-lg">
-              2015
+              2007
             </div>
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
-              <h3 className="text-lg font-bold text-secondary dark:text-yellow-400">Grado en Ingeniería Electrónica</h3>
+              <h3 className="text-lg font-bold text-secondary dark:text-yellow-400">Técnico Superior como "Analista de Sistemas"</h3>
               <p className="text-gray-700 dark:text-gray-300">
-                Completé mi formación académica, adquiriendo conocimientos fundamentales en diseño de circuitos, programación y sistemas embebidos.
+                Completé mi formación académica, adquiriendo conocimientos fundamentales en diseño de software y aplicaciones windows utilizando las tecnologias .NET, C, C++, Visual Foxpro,etc; ademas del uso de base de datos relacionales SQL.
               </p>
+              
             </div>
           </div>
           {/* Hito 2 */}
           <div className="mb-12 ml-6 relative">
             <div className="absolute -left-7 top-0 w-14 h-14 bg-primary text-white dark:bg-yellow-300 rounded-full flex items-center justify-center shadow-lg">
-              2017
+              2013
             </div>
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
-              <h3 className="text-lg font-bold text-secondary dark:text-yellow-400">Primer Proyecto Profesional</h3>
+              <h3 className="text-lg font-bold text-secondary dark:text-yellow-400">Grado en Ingenieria Electronica</h3>
               <p className="text-gray-700 dark:text-gray-300">
-                Lideré el desarrollo de un sistema de monitoreo basado en IoT para optimizar la eficiencia energética en plantas industriales.
+                Completé mi formación académica como Ingeniero en Electrónica, adquiriendo conocimientos fundamentales en diseño de circuitos, programación, automatismos y sistemas embebidos.
               </p>
             </div>
           </div>
           {/* Hito 3 */}
           <div className="mb-12 ml-6 relative">
             <div className="absolute -left-7 top-0 w-14 h-14 bg-primary text-white dark:bg-yellow-300 rounded-full flex items-center justify-center shadow-lg">
-              2020
+              2010
+            </div>
+            <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold text-secondary dark:text-yellow-400">Primer lugar en la IV feria Exposicion e innovacion Tecnologica </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                Ganador del primer lugar en la categoria Concurso con el tema de investigacion: "Procesamiento Digital de una Señal de Audio"
+              </p>
+            </div>
+          </div>
+          {/* Hito  4*/}
+          <div className="mb-12 ml-6 relative">
+            <div className="absolute -left-7 top-0 w-14 h-14 bg-primary text-white dark:bg-yellow-300 rounded-full flex items-center justify-center shadow-lg">
+              2024
+            </div>
+            <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold text-secondary dark:text-yellow-400">BootCamp Hamilo</h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                Culminado con exito el BootCamp "Hamilo" donde se desarrolló sistemas Full Stack con tecnologias como Vue, LiveWire, JavaScript, Html, Css, TailWind, Laravel, Php, Mysql, etc.
+              </p>
+            </div>
+          </div>
+          {/* Hito 5 */}
+          <div className="mb-12 ml-6 relative">
+            <div className="absolute -left-7 top-0 w-14 h-14 bg-primary text-white dark:bg-yellow-300 rounded-full flex items-center justify-center shadow-lg">
+              2024
             </div>
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-bold text-secondary dark:text-yellow-400">Transición al Desarrollo Full Stack</h3>
@@ -102,10 +127,10 @@ export default function About() {
               </p>
             </div>
           </div>
-          {/* Hito 4 */}
+          {/* Hito 6 */}
           <div className="mb-12 ml-6 relative">
             <div className="absolute -left-7 top-0 w-14 h-14 bg-primary text-white dark:bg-yellow-300 rounded-full flex items-center justify-center shadow-lg">
-              2023
+              2025
             </div>
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-bold text-secondary dark:text-yellow-400">Fundación de Mi Propio Blog</h3>
@@ -126,7 +151,7 @@ export default function About() {
         </p>
         <div className="flex justify-center space-x-6">
           <a
-            href="https://facebook.com/tuperfil"
+            href="https://facebook.com/DavidVilla"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:text-secondary transition"

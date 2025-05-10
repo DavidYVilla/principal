@@ -1,7 +1,7 @@
 export default function Blog() {
     const posts = [
       { slug: "primer-articulo", title: "Mi primer artículo" },
-      { slug: "trucos-de-diseño", title: "Trucos de diseño frontend" },
+      { slug: "trucos_diseno", title: "Trucos de diseño frontend" },
       { slug: "miprueba", title: "david villa" },
     ];
   
